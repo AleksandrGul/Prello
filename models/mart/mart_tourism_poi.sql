@@ -2,7 +2,7 @@ select
 department_code,
 department_name,
 a.municipality_code,
-poi,
+INITCAP(REPLACE(poi, '_', ' ')) as poi,
 COUNT(poi) as nb_poi,
 AVG(importance) as avg_importance_per_poi
 
