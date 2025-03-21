@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 WITH x AS (
     SELECT
         b.department_code AS department_code,

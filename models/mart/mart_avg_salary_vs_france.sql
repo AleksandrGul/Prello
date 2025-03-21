@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 WITH salary_cte AS (
     -- Step 1: Calculate the average salary per department per year
     SELECT

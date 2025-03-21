@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 select
 department_code,
 department_name,
