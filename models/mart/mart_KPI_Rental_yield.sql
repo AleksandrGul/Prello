@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 with rp as (SELECT
     a.municipality_code,
     cast(round(SUM(b.population)) as int64) as population,

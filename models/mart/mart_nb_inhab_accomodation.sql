@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 SELECT 
     geo.department_code,
     geo.department_name,

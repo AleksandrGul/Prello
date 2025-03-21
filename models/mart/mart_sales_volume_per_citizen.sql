@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 WITH population_data AS (
     SELECT
         department_code,
